@@ -1,0 +1,82 @@
+mixed=['jenny',1,1.4,True]
+print(mixed)
+list_of_lists=[['a',1],['b',2]]
+"""
+zero-indexing
+"""
+
+names=['roger','rafael','andy','novak']
+
+print(names[0])
+print(names[1])
+print(names[2])
+print(names[3])
+
+print(names[-1])
+
+hsu_building=['만우관','장공관','필허관','소통관','송암관','늦봄관','장준하']
+building_slice = hsu_building[1:4]
+building_slice[0]='생활관'
+print(building_slice)
+print(hsu_building)
+print(hsu_building[:])
+hsu_building.sort()
+
+print(hsu_building)
+
+restaurants=[['해우리','한식','고s'],['짜장명가','중식','중화비빔밥'],['찌개동아리','한식','제육전골'],['맘스터치','양식','싸이버거']]
+print(restaurants)
+restaurants[0][2]='해우라면'
+print(restaurants)
+
+
+"""
+addibg lists together
+"""
+items_one=['cake','cookie','bread']
+items_two = ['biscuit','tart']
+total_items=items_one+items_two
+print(total_items)
+
+
+"""
+Useful Method for Lists
+"""
+
+#Len()
+knapsack = [2,4,3,7,10]
+size=len(knapsack)
+print(size)
+#5
+#count
+backpack=['pencil','pen','notebook','textbook','pen','highlighter','pen']
+numpen=backpack.count('pen')
+
+print(numpen)
+
+orders=['daisies','periwinkle']
+orders.append('tulips')
+
+print(orders)
+
+#insert()
+store_line = ['karla','maxium','martin','isabella']
+store_line.insert(2,'vikor')
+
+print(store_line)
+
+#list.pop(index)  삭제함수 index에 null 입력시 디폴트로 마지막자료 삭제
+sw_subjects = ['C programming','calculus','Data Enineering','Data structures','Machine Learning']
+sw_subjects.pop(2)
+print(sw_subjects)
+sw_subjects.remove('calculus')
+print(sw_subjects)
+#NameError: name 'algorithms' is not defined
+
+#sort()
+numbers = [4,2,1,3]
+sorted_numbers=sorted(numbers)
+print(sorted_numbers)
+numbers.sort()
+print(numbers)
+
